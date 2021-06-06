@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="346.0" type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <Button fx:id="btnDone" mnemonicParsing="false" onAction="#taskDone" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 1em;" text="Done" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+   <center>
+      <Label fx:id="lblTask" alignment="CENTER" text="Task TITLE" BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </Label>
+   </center>
+   <left>
+      <ImageView fx:id="imgCheck" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+         <image>
+            <Image url="@../../assets/icon_no_check.png" />
+         </image>
+      </ImageView>
+   </left>
+</fx:root>
