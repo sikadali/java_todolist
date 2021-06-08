@@ -1,5 +1,6 @@
 # Make a ToDoList with JavaFX
 Objective : work on database and GUI skills.
+
 I worked on Intellj IDEA with JavaFX and MySQL.
 
 ## Possible improvements
