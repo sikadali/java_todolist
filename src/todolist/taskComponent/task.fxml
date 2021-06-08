@@ -6,8 +6,9 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="346.0" type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="396.0" type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <right>
       <Button fx:id="btnDone" mnemonicParsing="false" onAction="#taskDone" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 1em;" text="Done" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -15,13 +16,6 @@
          </BorderPane.margin>
       </Button>
    </right>
-   <center>
-      <Label fx:id="lblTask" alignment="CENTER" text="Task TITLE" BorderPane.alignment="CENTER_LEFT">
-         <BorderPane.margin>
-            <Insets left="5.0" />
-         </BorderPane.margin>
-      </Label>
-   </center>
    <left>
       <ImageView fx:id="imgCheck" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -32,4 +26,23 @@
          </image>
       </ImageView>
    </left>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblId" text="Label">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="lblTask" alignment="CENTER" text="Task TITLE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
 </fx:root>
