@@ -1,9 +1,9 @@
 # Make a ToDoList with JavaFX
-
 Objective : work on database and GUI skills.
+I worked on Intellj IDEA with JavaFX and MySQL.
 
-## Requirements
-- User can login
-- User can create a task
-- User can manage them by priority order
-- Tasks' state automaitically updates by time
+## Possible improvements
+- User registration & login
+- Better design of the UI
+- Switching scenes
+- Use of the pattern Observer for better interactions between model & view
